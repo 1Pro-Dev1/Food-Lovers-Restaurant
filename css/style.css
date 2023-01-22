@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anybody', cursive;
+}
+
+:root{
+    --main-color: #FA9100;
+    --white-color: rgb(223, 223, 223);
+    --black-color: #16171E;
+}
+
+img {
+    -webkit-user-drag: none;
+    -moz-window-dragging: none;
+}
+
+body{
+    background-color: var(--black-color);
+}
+
+.bg-main{
+    background: var(--main-color);
+}
+
+.text-main{
+    color: var(--main-color);
+}
+
+.text-main-white{
+    color: var(--white-color);
+}
+
+.text-main-black{
+    color: var(--black-color);
+}
+
+.hero{
+    min-height: 100vh;
+    position: relative;
+    background-image: url("../imgs/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #16171eea;
+}
+
+.nav-bar{
+    position: relative;
+    z-index: 3;
+}
+
+.nav-bar .container{
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .container .links{
+    display: flex;
+    gap: 35px;
+}
+
+.nav-bar .container .links a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.nav-bar .container .links a.active,
+.nav-bar .container .links a:hover{
+    color: var(--main-color);
+}
+
+.hero main{
+    position: relative;
+    z-index: 3;
+}
+
+.hero main .row{
+    align-items: center;
+}
+
+.hero main h1{
+    font-size: 65px;
+    text-transform: capitalize;
+}
+
+.hero main a{
+    padding: 15px 30px;
+}
+
+.hero main a:hover{
+    background-color: #ffae3b;
+}
+
+.hero main a:active{
+    background-color: #be7b1c !important;
+    transform: scale(0.99);
+}
+
+.about{
+    padding: 80px 0;
+}
+
+.about img{
+    box-shadow: -12px -12px 0 12px var(--main-color);
+}
+
+.gallery{
+    padding: 80px 0;
+}
+
+.enjoy{
+    padding: 80px 0;
+    background: var(--black-color) url("../imgs/bg2.jpg") center;
+}
+
+.enjoy .box{
+    border: 7px solid var(--main-color);
+    max-width: 600px;
+    background-color: #16171e65;
+}
+
+.menu{
+    padding: 80px 0;
+}
+
+.end img{
+    transform: scale(1.5);
+}
+
+.end .container{
+    gap: 180px;
+}
+
+footer{
+    padding: 120px 0 80px;
+}
+
+footer .links a{
+    transition: 0.5s;
+}
+
+footer .links a:hover{
+    color: var(--main-color);
+}
+
+footer i{
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+footer i:hover{
+    transform: translateY(-5px);
+}
