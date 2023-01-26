@@ -64,14 +64,14 @@ body{
     z-index: 3;
 }
 
-.nav-bar .container{
+.nav-bar .container.pc{
     padding: 25px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-bar .container .links{
+.nav-bar .container.pc .links{
     display: flex;
     gap: 35px;
 }
@@ -152,6 +152,13 @@ body{
     gap: 180px;
 }
 
+@media (max-width: 500px) {
+    .end .container{
+        gap: 100px;
+        overflow-x: hidden;
+    }
+}
+
 footer{
     padding: 120px 0 80px;
 }
@@ -173,4 +180,40 @@ footer i{
 
 footer i:hover{
     transform: translateY(-5px);
+}
+
+.hard{
+    padding: 200px 0 500px;
+}
+
+.hard .img1{
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 400px;
+}
+
+@media (max-width: 933px) {
+    .hard .img1{
+        width: 150px;
+    }
+
+    .hard{
+        padding: 200px 0 100px;
+    }
+}
+
+
+.hard .img2{
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    width: 500px;
+}
+
+.hard .img3{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    width: 450px;
 }

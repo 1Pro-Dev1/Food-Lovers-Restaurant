@@ -16,7 +16,7 @@
     <body>
         <div class="hero">
             <nav class="nav-bar mb-3">
-                <div class="container">
+                <div class="container pc d-none d-lg-flex">
                     <div class="links">
                         <a href="#" class="active">Home</a>
                         <a href="#">About</a>
@@ -28,6 +28,20 @@
                         <a href="#">Gallery</a>
                         <a href="#">Contact</a>
                         <a href="#">Blog</a>
+                    </div>
+                </div>
+                <div class="container mobile d-block d-lg-none">
+                    <div class="mobile">
+                        <div class="img d-flex align-items-center justify-content-center pt-3 pb-2 w-100">
+                            <img src="imgs/logo.png" alt="Food Lovers" class="logo">
+                        </div>
+                        <div class="links d-flex justify-content-between align-items-center">
+                            <a href="#" class="active">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Menus</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Contact</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -52,7 +66,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6"><img src="imgs/food2.jpg" alt="Food" class="img-fluid"></div>
                     <div class="col-lg-6">
-                        <h1 class="text-main fw-bold">About Us</h1>
+                        <h1 class="text-main fw-bold mt-3 mt-lg-0">About Us</h1>
                         <p class="fs-3 text-main-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni 
                             provident quidem sit quasi soluta voluptas! Maxime, exercitationem cum architecto 
                             repellat culpa consequuntur iste possimus accusamus laudantium delectus nisi voluptas?
@@ -62,16 +76,31 @@
             </div>
         </div>
 
+        <div class="hard bg-main position-relative">
+            <img src="imgs/food3.png" alt="" class="img1">
+            <img src="imgs/food5.png.png" alt="" class="img2 d-none d-lg-block">
+            <img src="imgs/food4.png.png" alt="" class="img3 d-none d-lg-block">
+            <div class="container">
+                <div class="text" style="max-width: 500px">
+                    <h1 class="fw-bold text-white">Our Food Quality</h1>
+                    <p class="text-main-white fs-3">Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Recusandae 
+                        rem minus corporis dolorem repellat sapiente 
+                        eaque, fugiat quae magni quam adipisci suscipit vitae.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="gallery">
             <div class="container">
                 <h1 class="text-center text-main mb-5 fw-bold">Our Food Gallery</h1>
-                <div class="row">
-                    <div class="col-lg-4"><img src="imgs/g1.jpg" alt="Food" class="img-fluid"></div>
-                    <div class="col-lg-4"><img src="imgs/g2.jpg" alt="Food" class="img-fluid"></div>
-                    <div class="col-lg-4"><img src="imgs/g3.jpg" alt="Food" class="img-fluid"></div>
-                    <div class="col-lg-4 mt-4"><img src="imgs/g4.jpg" alt="Food" class="img-fluid"></div>
-                    <div class="col-lg-4 mt-4"><img src="imgs/g5.jpg" alt="Food" class="img-fluid"></div>
-                    <div class="col-lg-4 mt-4"><img src="imgs/g6.jpg" alt="Food" class="img-fluid"></div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center"><img src="imgs/g1.jpg" alt="Food" class="img-fluid"></div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center mt-4 mt-md-0"><img src="imgs/g2.jpg" alt="Food" class="img-fluid"></div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center mt-4 mt-lg-0"><img src="imgs/g3.jpg" alt="Food" class="img-fluid"></div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center mt-4"><img src="imgs/g4.jpg" alt="Food" class="img-fluid"></div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center mt-4"><img src="imgs/g5.jpg" alt="Food" class="img-fluid"></div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center mt-4"><img src="imgs/g6.jpg" alt="Food" class="img-fluid"></div>
                 </div>
             </div>
         </div>
@@ -120,7 +149,7 @@
         </div>
 
         <div class="end bg-main mt-5">
-            <div class="container d-flex align-items-center">
+            <div class="container d-flex align-items-center flex-column flex-lg-row">
                 <img src="imgs/footer.png" width="300px"alt="Food" >
                 <div class="text">
                     <h1 class="text-main-white fw-bold">Enjoy Best Meal</h1>
